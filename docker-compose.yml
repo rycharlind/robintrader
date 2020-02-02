@@ -1,0 +1,9 @@
+version: '2'
+services:
+  robintrader:
+    build: .
+    expose:
+      - 80
+      - 9090
+    volumes:
+      - .:/code

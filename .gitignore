@@ -1,0 +1,7 @@
+.vscode
+data
+src/__pycache__
+src/test/__pycache__
+.pytest_cache/
+env.json
+app.log
