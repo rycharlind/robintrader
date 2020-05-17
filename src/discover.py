@@ -1,5 +1,4 @@
 import robin_stocks as robin
-from tabulate import tabulate
 import pathlib
 import json
 from env import Env
@@ -10,10 +9,9 @@ def save_json(filename, json_object):
     with open(file, 'w') as outfile:
         json.dump(json_object, outfile)
 
-
 robin.login(Env.robin_username, Env.robin_password, expiresIn=99999999)
 
-symbol = 'AET'
+symbol = 'AAPL'
 
 quotes = robin.get_quotes(symbol)
 fundementals = robin.get_fundamentals(symbol)
